@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #afafaa 0%, #2bff00 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LAYOUT */
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: #b3f0a7;
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+  position: absolute;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+  backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  background-color: #c7365f;
+  opacity: 0.8;
+  color: #fff;
+  width: 27%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn--roll--alphabet {
+  top: 45rem;
+  left: 30%;
+}
+
+.btn--roll--vowel {
+  top: 45rem;
+  left: 70%;
+}
+
+.btn--negative {
+  top: 2rem;
+  left: 90%;
+  width: 10%;
+  background-color: #fff;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.letter {
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  transform: translateX(-50%);
+  height: 40rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.statistics {
+  padding: 2% 0% 0% 1%;
+  font-size: large;
+  font-weight: bold;
+}
+
+.negative {
+  background-color: #c7365f;
+}
+
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 7px;
+}
